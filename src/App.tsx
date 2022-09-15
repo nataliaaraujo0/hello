@@ -1,5 +1,5 @@
-import { Card } from "./components/Card";
+import { Salutation } from "./components/Salutation";
 
 export function App() {
-  return <Card />;
+  return <Salutation />;
 }

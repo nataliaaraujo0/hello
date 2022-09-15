@@ -1,7 +1,7 @@
 import * as S from "./styled";
 type CardProps = {
-  title: string;
-  img?: string;
+  title?: string;
+  img?: any;
   bg?: string;
   fontColor?: string;
 };
@@ -12,7 +12,7 @@ export const Card = ({
   img = "../../../src/assets/hello.gif",
 }: CardProps) => {
   return (
-    <S.CardWrapper background-Color={bg} color={fontColor}>
+    <S.CardWrapper background={bg} color={fontColor}>
       <img src={img} />
       <strong>{title}🙃</strong>
     </S.CardWrapper>
